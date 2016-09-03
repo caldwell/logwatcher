@@ -18,5 +18,5 @@ fn main(){
         }
     };
     let mut log_watcher = LogWatcher::register(filename).unwrap();
-    log_watcher.watch(parse_line);
+    log_watcher.watch(&parse_line);
 }
